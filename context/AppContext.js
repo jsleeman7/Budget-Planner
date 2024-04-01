@@ -49,9 +49,9 @@ const saveState = (state) => {
 const initialState = loadState() || {
     budget: 2000,
     expenses: [
-        { id: 12, name: 'shopping', cost: 40 },
-        { id: 13, name: 'holiday', cost: 400 },
-        { id: 14, name: 'car service', cost: 50 },
+        { id: 12, name: 'shopping', cost: 40, date: '2024-05-23', type: 'Food' },
+        { id: 13, name: 'holiday', cost: 400, date: '2024-10-23', type: 'Entertainment' },
+        { id: 14, name: 'car service', cost: 50, date: '2024-30-23', type: 'Utilities'},
     ],
 };
 

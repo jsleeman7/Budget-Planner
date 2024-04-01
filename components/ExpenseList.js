@@ -11,7 +11,9 @@ const ExpenseList = () => {
                 <ExpenseItem
                     id={expense.id}
                     name={expense.name}
-                    cost={expense.cost} />
+                    cost={expense.cost}
+                    date={expense.date}
+                    type={expense.type} />
             ))}
         </ul>
     );

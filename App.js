@@ -6,14 +6,12 @@ import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
 import AddExpenseForm from './components/AddExpenseForm';
 import { AppProvider } from './context/AppContext';
-import MonthSelector from './components/MonthSelector';
 
 const App = () => {
   return (
     <AppProvider>
       <div className='container'>
         <h1 className='mt-3'>Budget Planner</h1>
-        <MonthSelector />
         <div className='row mt-3'>
           <div className='col-sm'>
             <Budget />

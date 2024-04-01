@@ -15,15 +15,23 @@ const ExpenseItem = (props) => {
 
     return (
         <li className='list-group-item d-flex justify-content-between align-items-center'>
-            {props.name}
+            <div style={{ minWidth: '200px' }}>
+                <span>{props.name}</span>
+                {props.type && (
+                    <span className="ms-2 text-muted">({props.type})</span>
+                )}
+            </div>
+            <div className="d-flex flex-column align-items-center">
+                <span className="text-muted">{props.date}</span>
+            </div>
             <div>
                 <span className="badge rounded-pill bg-primary me-3">
                     £{props.cost}
                 </span>
                 <TiDelete
-                size='1.5em'
-                onClick={handleDeleteExpense}
-                style={{ cursor: 'pointer' }}
+                    size='1.5em'
+                    onClick={handleDeleteExpense}
+                    style={{ cursor: 'pointer' }}
                 />
             </div>
         </li>
