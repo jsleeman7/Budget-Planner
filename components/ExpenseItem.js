@@ -21,11 +21,9 @@ const ExpenseItem = (props) => {
                     <span className="ms-2 text-muted">({props.type})</span>
                 )}
             </div>
-            <div className="d-flex flex-column align-items-center">
-                <span className="text-muted">{props.date}</span>
-            </div>
-            <div>
-                <span className="badge rounded-pill bg-primary me-3">
+            <div className="d-flex align-items-center">
+                <span className="text-muted me-3" style={{ minWidth: '100px' }}>{props.date}</span>
+                <span className="badge rounded-pill bg-primary me-3" style={{ minWidth: '75px' }}>
                     £{props.cost}
                 </span>
                 <TiDelete

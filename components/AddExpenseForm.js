@@ -56,7 +56,7 @@ const AddExpenseForm = () => {
                     <label htmlFor="cost" className="form-label">Cost</label>
                     <input
                         required
-                        type="text"
+                        type="number"
                         className="form-control"
                         id="cost"
                         value={cost}
@@ -66,7 +66,6 @@ const AddExpenseForm = () => {
                 <div className="col-sm-3">
                     <label htmlFor="date" className="form-label">Date</label>
                     <input
-                        required
                         type="date"
                         className="form-control"
                         id="date"
@@ -77,7 +76,6 @@ const AddExpenseForm = () => {
                 <div className="col-sm-3">
                     <label htmlFor="type" className="form-label">Type</label>
                     <select
-                        required
                         className="form-select"
                         id="type"
                         value={type}
