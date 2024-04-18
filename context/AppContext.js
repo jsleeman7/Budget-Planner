@@ -85,4 +85,6 @@ export const AppProvider = (props) => {
 
 /*
 Defines the context and state management using React Context API.
+
+Cloud storage API (Google, JSON storage, SQL)
 */

@@ -105,7 +105,7 @@ const ExpenseList = () => {
                         <option value="Miscellaneous">Miscellaneous</option>
                     </select>
                 </div>
-                <button className="btn btn-secondary" onClick={handleReset}>
+                <button className="btn btn-secondary mb-3" onClick={handleReset}>
                     Reset Filters
                 </button>
             </div>
