@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import ExpenseItem from "./ExpenseItem";
 import { AppContext } from "../context/AppContext";
-import YearPicker from "./YearPicker"; // Import YearPicker component
+import YearPicker from "./YearPicker";
 
 const ExpenseList = () => {
     const { expenses } = useContext(AppContext);

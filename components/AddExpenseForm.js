@@ -76,6 +76,7 @@ const AddExpenseForm = () => {
                 <div className="col-sm-3">
                     <label htmlFor="type" className="form-label">Type</label>
                     <select
+                        required
                         className="form-select"
                         id="type"
                         value={type}

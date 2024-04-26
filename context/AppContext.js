@@ -45,13 +45,13 @@ const saveState = (state) => {
     }
 };
 
-// Initial state of the application
+// Initial state of the application (for testing)
 const initialState = loadState() || {
     budget: 2000,
     expenses: [
-        { id: 12, name: 'shopping', cost: 40, date: '2024-05-23', type: 'Food' },
-        { id: 13, name: 'holiday', cost: 400, date: '2024-10-23', type: 'Entertainment' },
-        { id: 14, name: 'car service', cost: 50, date: '2024-30-23', type: 'Utilities'},
+        { id: 25, name: 'Weekly shop', cost: 50, date: '2024-05-12', type: 'Food' },
+        { id: 26, name: 'Hotel', cost: 400, date: '2024-06-26', type: 'Entertainment' },
+        { id: 27, name: 'Water bill', cost: 200, date: '2024-07-08', type: 'Utilities'},
     ],
 };
 
@@ -85,6 +85,4 @@ export const AppProvider = (props) => {
 
 /*
 Defines the context and state management using React Context API.
-
-Cloud storage API (Google, JSON storage, SQL)
 */
