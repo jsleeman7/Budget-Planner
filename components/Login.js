@@ -8,10 +8,10 @@ const Login = ({ authenticate }) => {
   const navigate = useNavigate(); // Use useNavigate hook for navigation
 
   const handleLogin = () => {
-    if (username === 'p1' && password === '1212b') {
+    if (username === 'p1' && password === '1212b5n') {
       // If credentials are correct, call the authenticate function passed as prop
       authenticate();
-      // Navigate to the home page (or any other desired page) after successful login
+      // Navigate to the home page after successful login
       navigate('/');
     } else {
       // If credentials are incorrect, display error message
@@ -22,7 +22,7 @@ const Login = ({ authenticate }) => {
   return (
     <div className="container d-flex justify-content-center align-items-center vh-100">
       <div className="card p-4" style={{ maxWidth: '400px' }}>
-        <h2 className="mb-3 text-center">BudgetHelp</h2>
+        <h2 className="mb-3 text-center">ExpenseHelp</h2>
         <h3 className="mb-3 text-center">Sign In</h3>
         <div className="mb-3">
           <label htmlFor="username" className="form-label">Username</label>

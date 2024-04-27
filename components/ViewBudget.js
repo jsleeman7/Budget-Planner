@@ -3,7 +3,7 @@ import React from 'react';
 const ViewBudget = (props) => {
 	return (
 		<>
-			<span>Budget: £{props.budget}</span>
+			<span><span style={{ fontWeight: 'bold' }}>Budget: </span>£{props.budget}</span>
 			<button type='button' class='badge rounded-pill bg-primary' onClick={props.handleEditClick}>
 				Edit
 			</button>

@@ -6,9 +6,9 @@ import YearPicker from "./YearPicker";
 const ExpenseList = () => {
     const { expenses } = useContext(AppContext);
     const [query, setQuery] = useState(""); // State to store search query
-    const [selectedMonth, setSelectedMonth] = useState(""); // State to store selected month
-    const [selectedYear, setSelectedYear] = useState(""); // State to store selected year
-    const [selectedType, setSelectedType] = useState(""); // State to store selected type
+    const [selectedMonth, setSelectedMonth] = useState("");
+    const [selectedYear, setSelectedYear] = useState("");
+    const [selectedType, setSelectedType] = useState("");
 
     const handleSearch = (event) => {
         setQuery(event.target.value.toLowerCase());
@@ -70,7 +70,7 @@ const ExpenseList = () => {
                     onChange={handleSearch}
                 />
                 <div className="d-flex justify-content-between mb-2">
-                    <YearPicker selectedYear={selectedYear} onChange={handleYearFilter} /> {/* Place YearPicker before Month filter */}
+                    <YearPicker selectedYear={selectedYear} onChange={handleYearFilter} />
                     <select
                         className="form-select me-2"
                         value={selectedMonth}
