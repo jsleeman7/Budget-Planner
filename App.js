@@ -11,7 +11,7 @@ import ExpenseLineChart from './components/ExpenseLineChart';
 import BudgetDetails from './components/BudgetDetails'
 import BudgetProgressBar from './components/BudgetProgressBar';
 
-const App = () => {
+const RootApp = () => {
   // State to manage authentication status
   const [authenticated, setAuthenticated] = useState(() => {
     // Initialize authentication state from localStorage
@@ -90,4 +90,4 @@ const Main = ({ setAuthenticated }) => {
   );
 };
 
-export default App;
+export default RootApp;
