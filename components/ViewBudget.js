@@ -1,14 +1,20 @@
-import React from 'react';
+import React from "react";
 
 const ViewBudget = (props) => {
-	return (
-		<>
-			<span><span style={{ fontWeight: 'bold' }}>Budget: </span>£{props.budget}</span>
-			<button type='button' class='badge rounded-pill bg-primary' onClick={props.handleEditClick}>
-				Edit
-			</button>
-		</>
-	);
+  return (
+    <>
+      <span>
+        <span style={{ fontWeight: "bold" }}>Budget: </span>£{props.budget}
+      </span>
+      <button
+        type="button"
+        class="badge rounded-pill bg-primary"
+        onClick={props.handleEditClick}
+      >
+        Edit
+      </button>
+    </>
+  );
 };
 
 export default ViewBudget;

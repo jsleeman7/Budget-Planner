@@ -1,8 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const YearPicker = ({ selectedYear, onChange }) => {
   const currentYear = new Date().getFullYear();
-  const years = Array.from({ length: 12 }, (_, index) => currentYear - index + 1);
+  const years = Array.from(
+    { length: 12 },
+    (_, index) => currentYear - index + 1
+  );
 
   return (
     <select
